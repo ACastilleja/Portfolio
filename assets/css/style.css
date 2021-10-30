@@ -96,7 +96,7 @@ p {
 /*Content style end*/
 
 /*Side Bar benefits style*/
-.benefits {
+.mywork {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -111,7 +111,11 @@ p {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
+.side-bar h2{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 36px;
+}
 .side-bar h3 {
     margin-bottom: 10px;
     text-align: center;
