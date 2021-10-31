@@ -113,7 +113,9 @@ p {
 .content-style img {
     max-height: 200px;
 }
-
+.content-style p {
+    font-size: 20px;
+}
 .content-style h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -137,6 +139,9 @@ p {
 .contact-me-style h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+.contact-me-style p {
+    font-size: 20px;
 }
 
 .contact-me-form {
@@ -168,7 +173,11 @@ p {
     margin-bottom: 15px;
     border-radius: 15px;
 }
-
+.button {
+    background-color: grey;
+    padding: 12px 28px;
+    border-radius: 8px;
+}
 
 /*Content style end*/
 
@@ -214,6 +223,16 @@ p {
 
 .side-bar p {
     text-align: center;
+}
+
+.thumbnail:hover {
+    position:relative;
+    top: 0px;
+    left: 0px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
 }
 /*Side bar benefits style end*/
 
