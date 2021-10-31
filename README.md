@@ -6,12 +6,9 @@ I was unsuccesful to completely fix media querie formating.  With continued prac
 I also added the required hover options to my project images and linked the resume image to eventually lead to new page with my resume.
 
 ##Built with 
-
     *HTML
     *CSS
-
 ##Website:
 
 ##Contribution
-
 ACastilleja ✌🏼
