@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ACastilleja</title>
 </head>
 
@@ -29,7 +30,11 @@
         </nav>
     </header>
     <!--Hero Section-->
-    <div class="hero"></div>
+    <section class="hero">
+        <div class="hero-quote">
+            <h2>Don't Stay Down! Get Up and Face Your Fears!</h2>
+        </div>
+    </section>
     <!--Hero Section End-->
 
     <!--Content Section -->
@@ -45,31 +50,51 @@
         </article>
 
         <article id="my-resume" class="content-style">
-            <img src="./assets/images/resume.jpeg" class="float-right" alt="blackboard image of written word resume"/>
+            <a href="http://www.google.com"> <!--google is placeholder for future Resume link-->
+            <img src="./assets/images/resume.jpeg" class="float-right" alt="blackboard image of written word resume" />
+            </a>
             <h2>My Resume</h2>
             <p>
                 Take a look at my resume, you might find out I am more than just looks. 🤣
             </p>
         </article>
 
-        <article id="contact-me" class="content-style">
-            <img src="./assets/images/callme.jpeg" class="float-left" alt="man with dreadlocks making hand gesture to call"/>
+        <article id="contact-me" class="contact-me-style">
+            
             <h2>Contact Me</h2>
             <p>
-                How can I help. Let me know, just fill out the contact me form and leave me a message 
-                and I will get back to you. Thank you.
+                I would be happy to help. 
             </p>
+            <div class="contact-me-form">
+                <h3>Contact Me</h3>
+                <p>Fill out this form and I will contact you ASAP!</p>
+                
+                <form>
+                    <label for="name">Enter full name:</label>
+                    <input type="text" placeholder="Your Name" name="name" id="name" class="form-input"/>
+                    <label for="email">Enter email address:</label>
+                    <input type="email" placeholder="Email Address" name="email" id="email" class="form-input"/>
+                    <label for="phone">Enter a telephone number</label>
+                    <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
+                    
+                    <button type="Submit" class="button">
+                        SUBMIT
+                    </button>
+                </form>
+            </div>
         </article>
     </section>
     <!--Content Section End-->
 
     <!--Side Bar Contents-->
     <div class="mywork">
+        <h2>My Work</h2>
         <article id="my-work" class="side-bar">
-            <h2>My Work</h2>
-            <img src="./assets/images/worktable.jpeg" alt="grayscale image of open laptop on desk next to an open notepad" />
+            
             <h3>Example 1</h3>
-            <img src="./assets/images/underconstruction1.jpeg" />
+            <a href="http://www.google.com"> <!--google link is just placeholder for future porject link-->
+                <img src="./assets/images/underconstruction2.jpeg" alt="underconstruction sign on tree trunk" class="thumbnail" height="100" width="100"/>
+            </a>
             <p>
                 No Description yet
             </p>
@@ -77,7 +102,9 @@
 
         <article class="side-bar">
             <h3>Example 2</h3>
-            <img src="./assets/images/underconstruction2.jpeg" />
+            <a href="http://www.google.com">
+                <img src="./assets/images/underconstruction2.jpeg" alt="underconstruction sign on tree trunk" class="thumbnail" height="100" width="100"/>
+            </a>
             <p>
                 No Description yet
             </p>
@@ -85,7 +112,9 @@
 
         <article class="side-bar">
             <h3>Example 3</h3>
-            <img src="./assets/images/underconstruction1.jpeg"></img>
+            <a href="http://www.google.com">
+                <img src="./assets/images/underconstruction2.jpeg" alt="underconstruction sign on tree trunk" class="thumbnail" height="100" width="100">
+            </a>
             <p>
                 No Description yet
             </p>
@@ -94,12 +123,18 @@
     <!--Side Bar Contents End-->
 
     <!--Footer-->
+    
     <div class="footer">
-        <h2>Do Good, Be Good, Awesome ✌🏼</h2>
-        <p>
-            2021 ACastilleja
-        </p>
+        
+        <footer class="footerbar">
+            <h2>Do Good, Be Good, Awesome ✌🏼</h2>
+            <p>
+                2021 ACastilleja
+            </p>
+        </footer>
+        
     </div>
+    
 </body>
 
 </html>

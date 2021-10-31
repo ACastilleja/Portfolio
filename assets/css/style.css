@@ -9,10 +9,17 @@ body {
 }
 /*header styles*/
 .header {
-    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 20px 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    z-index: 9999;
 }
 
 .header h1 {
@@ -33,6 +40,10 @@ body {
 }
 
 .header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
 }
 
@@ -49,19 +60,43 @@ a {
 p {
     font-size: 16px;
 }
-/*hero style */
+/*hero style start */
 .hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/hirobot.jpeg");
+    background-image: url("../images/hirobot.jpeg"); 
     background-size: cover;
     background-position: center;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    
 }
+.hero-quote {
+    width: 35%;
+    text-align: right;
+    margin: 35%;
+    color:#ffffff;
+    font-size: 18px;
+    line-height: 1.2;
+    
+}
+
+.hero-quote h2{
+    font-Style: italic;
+    font-size: 30px;
+    color: white;
+    position: relative; left: 200px; top: 250px;
+
+}
+/*hero style end*/
+
 /*content style start*/
 .float-left {
     float: left;
     margin-right: 25px;
+    
 }
 
 .float-right {
@@ -81,21 +116,85 @@ p {
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
+    color: #0c0b0b;
+    background-image: url("../images/bluesmoke.jpeg");
+    background-size: cover;
+    background-position: center;
 }
 
 .content-style img {
     max-height: 200px;
 }
-
+.content-style p {
+    font-size: 22px;
+}
 .content-style h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
+/*style for contact me section and form*/
+.contact-me-style {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #0c0b0b;
+    background-image: url("../images/bluesmoke.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-me-style img {
+    max-height: 200px;
+}
+
+.contact-me-style h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.contact-me-style p {
+    font-size: 22px;
+}
+
+.contact-me-form {
+    border: 3px solid black;
+    background-color: #2a607c;
+    padding: 20px;
+    color: black;
+    width: 40%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    position: relative; left: 300px; top: -100px;
+}
+.contact-me-form h3 {
+    font-size: 24px;
+    margin: 0;
+}
+.contact-me-form p {
+    margin: 5px 0 15px 0;
+}
+.form-input {
+    background-color: rgba(255,255,255,0.75);
+    border: 1px solid black;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color:black;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.button {
+    background-color: grey;
+    padding: 12px 28px;
+    border-radius: 8px;
+}
 
 /*Content style end*/
 
-/*Side Bar benefits style*/
+/*Side Bar My Work style*/
 .mywork {
     margin-right: 20px;
     padding: 20px;
@@ -105,17 +204,25 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    background-image: url("../images/bluesmoke.jpeg");
+    background-size: cover;
+    background-position: center;
 }
-
-.side-bar {
-    margin-bottom: 32px;
-    color: #ffffff;
+.mywork img{
+    display: block;
+    margin: 10px auto;
+    max-width: 200px; 
 }
-.side-bar h2{
+.mywork h2{
     margin-bottom: 10px;
     text-align: center;
     font-size: 36px;
 }
+.side-bar {
+    margin-bottom: 32px;
+    color: #0c0b0b;
+}
+
 .side-bar h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -130,16 +237,105 @@ p {
 .side-bar p {
     text-align: center;
 }
+
+.thumbnail:hover {
+    position:relative;
+    top: 0px;
+    left: 0px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
 /*Side bar benefits style end*/
 
 /*footer style*/
+.footerbar {
+    margin-bottom: 20px;
+    padding: 1em;
+    height: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2a607c;
+    color: black;
+    
+    background-size: cover;
+    background-position: center;
+}
 .footer {
-    padding: 30px;
-    clear: both;
+    font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    
+}
+/*Media Query for Desktop screens and smaller*/
+@media screen and (max-width: 980px) {
+    .header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    .header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    .header nav ul li a {
+        font-size: 20px;
+    }
+    .content-style h2, .contact-me-styel h2, .mywork h2 {
+        font-size: 20px;
+    }
+    .content-style p, .contact-me-style p, .mywork p {
+        font-size: 15px;
+    }
+    footer h2, footer div {
+        text-align: center;
+        width: 100%
+    }
+    .hero-quote, .contact-me-form {
+        width: 100%;
+    }
+    .hero-quote {
+        text-align: center;
+    }
+    .content-style, .contact-me-style ,.contact-me-style, .contact-me-form {
+        width: 80%;
+    }
+    
 }
 
-.footer h2 {
-    font-size: 20px;
+/* Media Query for Tablets and Smaller */
+@media screen and (max-width: 768px) {
+    .content-style, .mywork {
+        padding: 30px 15px;
+    }
+    .content-style p {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .content-style, .mywork, .contact-me-style {
+        flex: 2 100%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+}
+/* Media Query for Mobile Phones and Smaller */
+@media screen and (max-width: 575px) {
+    
+    .hero-quote h2 {
+        width: 100%;
+    }
+    .content-style, .mywork, .contact-me-form {
+        flex: 0 100%;
+    }
+    
+    .contact-me-form {
+        order: 3;
+    }
 }
