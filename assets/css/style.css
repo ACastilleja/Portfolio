@@ -80,7 +80,9 @@ p {
     color:#ffffff;
     font-size: 18px;
     line-height: 1.2;
+    
 }
+
 .hero-quote h2{
     font-Style: italic;
     font-size: 30px;
@@ -164,7 +166,7 @@ p {
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 15px;
-    position: relative; left: 500px; top: -120px;
+    position: relative; left: 300px; top: -100px;
 }
 .contact-me-form h3 {
     font-size: 24px;
@@ -264,4 +266,76 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     
+}
+/*Media Query for Desktop screens and smaller*/
+@media screen and (max-width: 980px) {
+    .header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    .header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    .header nav ul li a {
+        font-size: 20px;
+    }
+    .content-style h2, .contact-me-styel h2, .mywork h2 {
+        font-size: 20px;
+    }
+    .content-style p, .contact-me-style p, .mywork p {
+        font-size: 15px;
+    }
+    footer h2, footer div {
+        text-align: center;
+        width: 100%
+    }
+    .hero-quote, .contact-me-form {
+        width: 100%;
+    }
+    .hero-quote {
+        text-align: center;
+    }
+    .content-style, .contact-me-style ,.contact-me-style, .contact-me-form {
+        width: 80%;
+    }
+    
+}
+
+/* Media Query for Tablets and Smaller */
+@media screen and (max-width: 768px) {
+    .content-style, .mywork {
+        padding: 30px 15px;
+    }
+    .content-style p {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .content-style, .mywork, .contact-me-style {
+        flex: 2 100%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+}
+/* Media Query for Mobile Phones and Smaller */
+@media screen and (max-width: 575px) {
+    
+    .hero-quote h2 {
+        width: 100%;
+    }
+    .content-style, .mywork, .contact-me-form {
+        flex: 0 100%;
+    }
+    
+    .contact-me-form {
+        order: 3;
+    }
 }
