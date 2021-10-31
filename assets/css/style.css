@@ -54,9 +54,31 @@ p {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/hirobot.jpeg");
-    background-size: cover;
+    background-image: url("../images/hirobot.jpeg"); 
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+.hero-quote {
+    width: 35%;
+    text-align: right;
+    margin: 35%;
+    color:#ffffff;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.hero-quote h2{
+    font-Style: italic;
+    font-size: 30px;
+    color: white;
+    position: relative; left: 250px; top: 100px;
+
 }
 /*content style start*/
 .float-left {
